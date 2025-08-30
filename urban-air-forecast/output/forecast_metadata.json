@@ -1,0 +1,45 @@
+{
+  "model_version": "LGBM_PM25_v2.0",
+  "model_hash": "efaaf6f5aab1d9be003e15ac83cae6b5d08ce409ff77a98151bd97b978141250",
+  "forecast_generated_at": "2025-08-30T16:05:58.923490",
+  "issue_time": "2024-01-30 23:00:00+05:30",
+  "author": "Enhanced Forecast System v2.0",
+  "forecast_horizon_hours": 72,
+  "timezone": "Asia/Kolkata",
+  "stations_count": 3,
+  "total_forecasts": 216,
+  "model_features_count": 15,
+  "validation": {
+    "total_forecasts": 216,
+    "valid_forecasts": 216,
+    "failed_forecasts": 0,
+    "poor_quality": 0,
+    "coverage_sufficient": true,
+    "validation_passed": true,
+    "issues": []
+  },
+  "data_coverage": {
+    "weather_hours": 2376,
+    "simulation_hours": 2376,
+    "coverage_ratio": 33.0,
+    "issues": []
+  },
+  "data_provenance": {
+    "weather_source": "weather.csv",
+    "simulation_source": "simulation.csv",
+    "historical_source": "feature_table.parquet",
+    "model_source": "lgbm_pm25.joblib"
+  },
+  "quality_summary": {
+    "valid_forecasts": 216,
+    "failed_forecasts": 0,
+    "poor_quality": 0,
+    "validation_passed": true
+  },
+  "uncertainty_info": {
+    "method": "horizon_based_growth",
+    "confidence_intervals": "95%",
+    "base_uncertainty": 0.1,
+    "growth_rate": 0.02
+  }
+}

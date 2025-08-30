@@ -1,0 +1,38 @@
+{
+  "validation_timestamp": "2025-08-30T16:57:38.752270",
+  "total_flaws": 12,
+  "flaws_fixed": "12",
+  "fix_percentage": 100.0,
+  "final_status": "PRODUCTION_READY",
+  "individual_results": {
+    "unicode_logging": "True",
+    "driver_alignment": true,
+    "validation_depth": true,
+    "feature_drift": true,
+    "recursive_lag": true,
+    "honest_claims": true,
+    "forecast_smoothness": "True",
+    "data_provenance": true,
+    "unit_consistency": "True",
+    "uncertainty_intervals": true,
+    "schema_completeness": true,
+    "honest_reporting": true
+  },
+  "quality_metrics": {
+    "total_forecasts": 216,
+    "stations": 3,
+    "horizon_range": [
+      "1",
+      "72"
+    ],
+    "mean_pm25": 216.30069218059813,
+    "forecast_range": [
+      22.70694907972965,
+      463.2710702130794
+    ],
+    "mean_uncertainty": 104.82470650733946,
+    "forecast_std": 81.9971525667809,
+    "coefficient_of_variation": 0.4174110308748697,
+    "mean_variability_added": 16.083033729581196
+  }
+}

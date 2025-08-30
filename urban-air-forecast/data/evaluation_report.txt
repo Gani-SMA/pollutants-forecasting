@@ -1,0 +1,48 @@
+Urban Air Pollution Forecasting - Model Evaluation Report
+
+DATASET INFO:
+- Total samples: 2088
+- Cross-validation: time_series_cv
+- Number of folds: 5
+
+BASELINE MODEL (Naive-24h):
+- MSE: 58.8460
+- RMSE: 7.6711
+- MAE: 6.1345
+- R²: 0.7534
+- Samples: 2088
+
+LIGHTGBM MODEL:
+Fold-wise Performance:
+- fold_1: RMSE=2.8689, R²=0.9388 (train: 348, val: 348)
+- fold_2: RMSE=6.0716, R²=0.8471 (train: 696, val: 348)
+- fold_3: RMSE=2.7189, R²=0.9672 (train: 1044, val: 348)
+- fold_4: RMSE=2.4606, R²=0.9480 (train: 1392, val: 348)
+- fold_5: RMSE=2.4440, R²=0.9482 (train: 1740, val: 348)
+
+Mean Performance:
+- MSE: 12.9030 (±12.0105)
+- RMSE: 3.3128 (±1.3887)
+- MAE: 2.5682 (±0.9009)
+- R²: 0.9299 (±0.0424)
+
+MODEL COMPARISON:
+- MSE Improvement: 78.07%
+- RMSE Improvement: 56.81%
+- Model Status: OUTPERFORMS baseline
+- Model Reliability: UNSTABLE (RMSE std: 1.3887)
+
+TOP 10 FEATURE IMPORTANCE:
+- pm25_roll_3h: 223.4000
+- no2: 187.4000
+- dispersion_pm25: 178.8000
+- so2: 173.2000
+- co: 139.0000
+- pm25_lag1: 117.8000
+- o3: 108.4000
+- pm25_lag24: 104.2000
+- temp_c: 102.0000
+- industrial_idx: 90.6000
+
+RECOMMENDATIONS:
+- High variance detected - model may be overfitting

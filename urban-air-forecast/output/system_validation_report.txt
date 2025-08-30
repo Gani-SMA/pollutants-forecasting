@@ -1,0 +1,112 @@
+
+URBAN AIR POLLUTION FORECASTING SYSTEM - COMPREHENSIVE VALIDATION REPORT
+Generated: 2025-08-30 16:07:38
+
+=== EXECUTIVE SUMMARY ===
+Total Forecasts: 216
+Stations: 3
+Horizon Coverage: 1-72 hours
+Schema Complete: True
+Feature Consistency Score: 100.00%
+
+=== FORECAST QUALITY ANALYSIS ===
+Quality Flag Distribution:
+  - degraded: 141 (65.3%)
+  - uncertain: 72 (33.3%)
+  - ok: 3 (1.4%)
+
+Missing Features:
+  - Average: 3.3
+  - Maximum: 4
+  - Standard Deviation: 1.0
+
+Forecast Value Analysis:
+  - Mean PM2.5: 49.1 ug/m3
+  - Range: 36.8 - 66.7 ug/m3
+  - Unrealistic Values (<0): 0
+  - Extreme Values (>500): 0
+
+Smoothness Analysis:
+  - Average Smoothness: 1.70
+  - Threshold: 5.0
+  - Unrealistically Smooth: YES
+
+=== FEATURE CONSISTENCY ANALYSIS ===
+Feature Counts:
+  - Training Features: 15
+  - Model Features: 15
+  - Historical Features: 25
+
+Feature Drift Issues:
+  - Missing in Model: 0
+  - Extra in Model: 0
+  - Missing in Historical: 0
+
+Consistency Score: 100.00%
+
+=== DRIVER DATA ALIGNMENT ===
+Weather Data:
+  - Total Hours: 2376
+  - Stations: 3
+  - Missing Values: 0
+  - 72h Coverage: YES
+
+Simulation Data:
+  - Total Hours: 2376
+  - Stations: 3
+  - Missing Values: 0
+  - 72h Coverage: YES
+
+Alignment Issues: 0
+
+=== OUTPUT SCHEMA VALIDATION ===
+Schema Version: 2.0
+Schema Complete: YES
+Missing Columns: 0
+Extra Columns: 0
+Units Consistent: YES
+
+Metadata Completeness:
+  - Model Hash: YES
+  - Validation Results: YES
+  - Data Provenance: YES
+  - Uncertainty Info: YES
+  - Quality Summary: YES
+
+=== RECURSIVE LAG PROPAGATION ANALYSIS ===
+
+Station ST001:
+  - Forecast Std Dev: 3.34
+  - Mean Change: 1.75
+  - Uncertainty Growth: 0.0200
+  - Low Variation Flag: NO
+  - High Variation Flag: NO
+  - Max Uncertainty: 1.54
+  - Error Propagation Score: 0.0475
+
+Station ST002:
+  - Forecast Std Dev: 2.76
+  - Mean Change: 1.61
+  - Uncertainty Growth: 0.0200
+  - Low Variation Flag: NO
+  - High Variation Flag: NO
+  - Max Uncertainty: 1.54
+  - Error Propagation Score: 0.0354
+
+Station ST003:
+  - Forecast Std Dev: 3.03
+  - Mean Change: 1.74
+  - Uncertainty Growth: 0.0200
+  - Low Variation Flag: NO
+  - High Variation Flag: NO
+  - Max Uncertainty: 1.54
+  - Error Propagation Score: 0.0517
+
+=== OVERALL ASSESSMENT ===
+Critical Issues: 0
+
+Warnings: 2
+  ⚠️  Forecasts may be unrealistically smooth
+  ⚠️  High number of missing features in forecasts
+
+⚠️  SYSTEM VALIDATION PASSED WITH WARNINGS - 2 warnings detected

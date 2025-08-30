@@ -1,0 +1,72 @@
+{
+  "version": "2.0",
+  "columns": {
+    "issue_time": {
+      "type": "datetime",
+      "description": "When forecast was issued",
+      "timezone": "Asia/Kolkata"
+    },
+    "target_time": {
+      "type": "datetime",
+      "description": "Target time for prediction",
+      "timezone": "Asia/Kolkata"
+    },
+    "station_id": {
+      "type": "string",
+      "description": "Air quality monitoring station ID"
+    },
+    "horizon_hours": {
+      "type": "integer",
+      "description": "Hours ahead from issue time",
+      "range": [
+        1,
+        72
+      ]
+    },
+    "pm25_forecast": {
+      "type": "float",
+      "description": "PM2.5 concentration forecast",
+      "units": "ug/m3"
+    },
+    "pm25_lower_ci": {
+      "type": "float",
+      "description": "95% confidence interval lower bound",
+      "units": "ug/m3"
+    },
+    "pm25_upper_ci": {
+      "type": "float",
+      "description": "95% confidence interval upper bound",
+      "units": "ug/m3"
+    },
+    "uncertainty": {
+      "type": "float",
+      "description": "Forecast uncertainty (std dev)",
+      "units": "ug/m3"
+    },
+    "quality_flag": {
+      "type": "string",
+      "description": "Forecast quality indicator",
+      "values": [
+        "ok",
+        "degraded",
+        "uncertain",
+        "poor",
+        "failed"
+      ]
+    },
+    "missing_features": {
+      "type": "integer",
+      "description": "Number of missing model features"
+    },
+    "units": {
+      "type": "string",
+      "description": "Measurement units",
+      "value": "ug/m3"
+    }
+  },
+  "validation_criteria": {
+    "min_coverage": 0.8,
+    "min_confidence": 0.7,
+    "max_failure_rate": 0.1
+  }
+}

@@ -1,0 +1,19 @@
+2025-08-30 16:12:06,217 - INFO - Starting advanced forecast generation
+2025-08-30 16:12:06,598 - INFO - Loaded primary model with 15 features
+2025-08-30 16:12:06,598 - INFO - Historical data: (2088, 28)
+2025-08-30 16:12:06,618 - INFO - Training advanced models for ST001
+2025-08-30 16:12:07,153 - INFO - Trained uncertainty model for ST001 with 200 samples
+2025-08-30 16:12:07,433 - INFO - Trained Random Forest for ST001
+2025-08-30 16:12:07,433 - INFO - Training advanced models for ST002
+2025-08-30 16:12:07,910 - INFO - Trained uncertainty model for ST002 with 200 samples
+2025-08-30 16:12:08,233 - INFO - Trained Random Forest for ST002
+2025-08-30 16:12:08,234 - INFO - Training advanced models for ST003
+2025-08-30 16:12:08,795 - INFO - Trained uncertainty model for ST003 with 200 samples
+2025-08-30 16:12:09,053 - INFO - Trained Random Forest for ST003
+2025-08-30 16:12:09,054 - INFO - Generating advanced forecasts for ST001
+2025-08-30 16:12:11,400 - INFO - Generating advanced forecasts for ST002
+2025-08-30 16:12:12,004 - INFO - Generating advanced forecasts for ST003
+2025-08-30 16:12:12,617 - INFO - Advanced forecast generation completed
+2025-08-30 16:12:12,617 - INFO - Total forecasts: 216
+2025-08-30 16:12:12,618 - INFO - Quality distribution: {'ok': np.int64(144), 'uncertain': np.int64(72)}
+2025-08-30 16:12:12,621 - INFO - Average forecast variability: 8.49

@@ -1,0 +1,31 @@
+{
+  "feature_columns": [
+    "no2",
+    "so2",
+    "co",
+    "o3",
+    "temp_c",
+    "industrial_idx",
+    "dispersion_pm25",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "pm25_lag1",
+    "pm25_lag24",
+    "pm25_roll_3h",
+    "pm25_roll_24h",
+    "temp_roll_6h"
+  ],
+  "model_parameters": "LightGBM default from training",
+  "forecast_horizon": 72,
+  "timezone": "Asia/Kolkata",
+  "bounds": {
+    "min": 0,
+    "max": 500
+  },
+  "gap_filling": {
+    "short_gaps": "forward_fill",
+    "medium_gaps": "linear_interpolation",
+    "max_gap_hours": 24
+  }
+}

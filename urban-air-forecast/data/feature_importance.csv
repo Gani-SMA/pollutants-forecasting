@@ -1,0 +1,16 @@
+feature_name,importance
+pm25_roll_3h,223.4
+no2,187.4
+dispersion_pm25,178.8
+so2,173.2
+co,139.0
+pm25_lag1,117.8
+o3,108.4
+pm25_lag24,104.2
+temp_c,102.0
+industrial_idx,90.6
+temp_roll_6h,90.2
+pm25_roll_24h,83.0
+hour,67.8
+day_of_week,28.6
+is_weekend,1.4

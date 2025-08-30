@@ -1,0 +1,27 @@
+{
+  "descriptive_stats": {
+    "forecast_mean": 57.22257288610211,
+    "forecast_std": 9.85969909710626,
+    "forecast_min": 46.14275756074042,
+    "forecast_max": 72.84850865585217,
+    "forecast_median": 53.20237931198035,
+    "total_forecasts": 216,
+    "stations": 3,
+    "horizons": 72,
+    "flag_distribution": {
+      "no_drivers": 144,
+      "ok": 72
+    }
+  },
+  "validation_results": {
+    "total_forecasts": 216,
+    "expected_forecasts": 216,
+    "completeness_check": "pass",
+    "bounds_check": "pass",
+    "nan_check": "pass",
+    "issues": [],
+    "status": "pass"
+  },
+  "generated_at": "2025-08-30T10:18:37.712303",
+  "reproducibility_hash": "cfd31af87dcf774562e7540861ad4f0674a93fb8a04a31c386ddf4b4971e061a"
+}
