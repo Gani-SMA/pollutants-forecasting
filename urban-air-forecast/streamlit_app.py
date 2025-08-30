@@ -243,8 +243,30 @@ def main():
         # Generate button
         generate_btn = st.button("🎯 Generate Policy Recommendations", type="primary", use_container_width=True)
     
+    # Add image analysis tab
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("📸 Image Analysis")
+    if st.sidebar.button("🔬 Analyze Air Quality from Image"):
+        st.session_state.show_image_analysis = True
+    
     # Main content area
-    if generate_btn:
+    if hasattr(st.session_state, 'show_image_analysis') and st.session_state.show_image_analysis:
+        # Import and run image analysis
+        import sys
+        from pathlib import Path
+        sys.path.append(str(Path(__file__).parent / "app"))
+        
+        try:
+            from image_pollution_analyzer import create_image_analysis_ui
+            create_image_analysis_ui()
+        except ImportError:
+            st.error("Image analysis module not available. Please ensure OpenCV is installed.")
+        
+        if st.button("🔙 Back to Policy Assistant"):
+            st.session_state.show_image_analysis = False
+            st.rerun()
+    
+    elif generate_btn:
         # Prepare input data
         input_data = {
             "station_id": station_id,

@@ -1,0 +1,16 @@
+# Core requirements
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+plotly>=5.15.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+requests>=2.28.0
+
+# Supabase integration
+supabase>=2.0.0
+python-dotenv>=1.0.0
+
+# Additional utilities
+python-dateutil>=2.8.0
+pytz>=2023.3
